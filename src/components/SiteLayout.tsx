@@ -3,10 +3,10 @@ import type { ReactNode } from "react";
 import mark from "@/assets/aleesh-mark.png";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/products", label: "Products" },
-  { to: "/about", label: "Our Story" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "خانه" },
+  { to: "/products", label: "محصولات" },
+  { to: "/about", label: "داستان ما" },
+  { to: "/contact", label: "تماس" },
 ] as const;
 
 export function SiteLayout({ children }: { children: ReactNode }) {
@@ -35,7 +35,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             to="/contact"
             className="rounded-full bg-primary px-5 py-2 text-sm text-primary-foreground transition hover:opacity-90"
           >
-            Order now
+            سفارش دهید
           </Link>
         </div>
         <nav className="flex justify-center gap-6 pb-3 text-sm md:hidden">
@@ -51,19 +51,19 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-14 md:grid-cols-3">
           <div>
             <p className="font-display text-3xl tracking-[0.25em]">ALEESH</p>
-            <p className="mt-3 text-sm opacity-80">Organic vegetables, honestly packed.</p>
+            <p className="mt-3 text-sm opacity-80">سبزیجات ارگانیک، بسته‌بندی صادقانه.</p>
           </div>
           <div className="text-sm opacity-80">
-            <p className="font-semibold opacity-100">Visit</p>
-            <p className="mt-2">Products · Our Story · Contact</p>
+            <p className="font-semibold opacity-100">صفحات</p>
+            <p className="mt-2">محصولات · داستان ما · تماس</p>
           </div>
           <div className="text-sm opacity-80">
-            <p className="font-semibold opacity-100">Promise</p>
-            <p className="mt-2">Certified organic · Plastic-free packaging · Farm to door</p>
+            <p className="font-semibold opacity-100">تعهد ما</p>
+            <p className="mt-2">ارگانیک تأییدشده · بسته‌بندی بدون پلاستیک · از مزرعه تا در خانه</p>
           </div>
         </div>
         <p className="border-t border-primary-foreground/15 py-5 text-center text-xs opacity-60">
-          © {new Date().getFullYear()} ALEESH. All rights reserved.
+          © {new Date().getFullYear()} الیش. تمامی حقوق محفوظ است.
         </p>
       </footer>
     </div>
@@ -73,7 +73,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
     <section className="mx-auto max-w-3xl px-6 pb-12 pt-20 text-center">
-      <p className="text-xs uppercase tracking-[0.3em] text-accent-foreground/70">{eyebrow}</p>
+      <p className="text-sm text-accent-foreground/70">{eyebrow}</p>
       <h1 className="mt-4 text-5xl text-primary md:text-6xl">{title}</h1>
       {intro && <p className="mt-5 text-lg text-muted-foreground">{intro}</p>}
     </section>

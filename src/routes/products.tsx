@@ -4,28 +4,28 @@ import { SiteLayout, PageHeading } from "@/components/SiteLayout";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Products — ALEESH Organic Vegetables" },
-      { name: "description", content: "Seasonal organic vegetable boxes, fresh greens, root vegetables and eco packaging from ALEESH." },
-      { property: "og:title", content: "Products — ALEESH Organic Vegetables" },
-      { property: "og:description", content: "Seasonal organic boxes, greens, roots and plastic-free packaging." },
+      { title: "محصولات — الیش" },
+      { name: "description", content: "جعبه‌های فصلی سبزیجات ارگانیک، سبزی‌های برگی تازه، سبزیجات ریشه‌ای و بسته‌بندی سبز از الیش." },
+      { property: "og:title", content: "محصولات — الیش" },
+      { property: "og:description", content: "جعبه‌های فصلی ارگانیک، سبزی برگی، سبزیجات ریشه‌ای و بسته‌بندی بدون پلاستیک." },
     ],
   }),
   component: Products,
 });
 
 const products = [
-  { name: "Seasonal Harvest Box", d: "A weekly mix of what's best in the field right now." },
-  { name: "Leafy Greens", d: "Kale, spinach, lettuce and herbs, cut the morning they ship." },
-  { name: "Root Vegetables", d: "Carrots, beets, potatoes and onions with the soil still on." },
-  { name: "Tomatoes & Peppers", d: "Sun-ripened, never gassed, full of flavor." },
-  { name: "Family Box", d: "A generous weekly box sized for four." },
-  { name: "Eco Packaging", d: "Kraft boxes and compostable bags for shops and restaurants." },
+  { name: "جعبه برداشت فصل", d: "ترکیبی هفتگی از بهترین‌های همین روزهای مزرعه." },
+  { name: "سبزیجات برگی", d: "کلم، اسفناج، کاهو و سبزی خوراکی؛ چیده‌شده در صبح روز ارسال." },
+  { name: "سبزیجات ریشه‌ای", d: "هویج، چغندر، سیب‌زمینی و پیاز؛ تازه از دل خاک." },
+  { name: "گوجه و فلفل", d: "رسیده زیر آفتاب، بدون گازدهی، پر از طعم." },
+  { name: "جعبه خانواده", d: "جعبه‌ی هفتگی بزرگ و سخاوتمندانه، مناسب چهار نفر." },
+  { name: "بسته‌بندی سبز", d: "جعبه‌های کرافت و کیسه‌های کمپوست‌شدنی برای فروشگاه‌ها و رستوران‌ها." },
 ];
 
 function Products() {
   return (
     <SiteLayout>
-      <PageHeading eyebrow="Our produce" title="Grown slowly. Packed simply." intro="Everything we sell is certified organic and leaves our farm in plastic-free packaging." />
+      <PageHeading eyebrow="محصولات ما" title="آهسته پرورش می‌دهیم. ساده بسته‌بندی می‌کنیم." intro="همه‌ی محصولات ما ارگانیک تأییدشده هستند و بدون پلاستیک از مزرعه بیرون می‌روند." />
       <section className="mx-auto grid max-w-6xl gap-6 px-6 pb-24 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((p) => (
           <article key={p.name} className="rounded-2xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:shadow-lg">
@@ -33,7 +33,7 @@ function Products() {
             <h2 className="mt-6 text-3xl text-primary">{p.name}</h2>
             <p className="mt-3 text-muted-foreground">{p.d}</p>
             <Link to="/contact" className="mt-6 inline-block text-sm font-semibold text-primary underline-offset-4 hover:underline">
-              Order →
+              سفارش ←
             </Link>
           </article>
         ))}
