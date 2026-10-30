@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeading } from "@/components/SiteLayout";
 import harvestBox from "@/assets/products/harvest-box.jpg";
 import leafyGreens from "@/assets/products/leafy-greens.jpg";
@@ -12,9 +12,9 @@ import driedFruits from "@/assets/products/dried-fruits.jpg";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "محصولات — الیش" },
-      { name: "description", content: "جعبه‌های فصلی سبزیجات ارگانیک، سبزی‌های برگی تازه، سبزیجات ریشه‌ای و بسته‌بندی سبز از الیش." },
-      { property: "og:title", content: "محصولات — الیش" },
+      { title: "محصولات — عالیش" },
+      { name: "description", content: "جعبه‌های فصلی سبزیجات ارگانیک، سبزی‌های برگی تازه، سبزیجات ریشه‌ای و بسته‌بندی سبز از عالیش." },
+      { property: "og:title", content: "محصولات — عالیش" },
       { property: "og:description", content: "جعبه‌های فصلی ارگانیک، سبزی برگی، سبزیجات ریشه‌ای و بسته‌بندی بدون پلاستیک." },
     ],
   }),
@@ -54,3 +54,4 @@ function Products() {
     </SiteLayout>
   );
 }
+

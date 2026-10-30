@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import hero from "@/assets/hero.jpg";
 import packaging from "@/assets/packaging.jpg";
@@ -7,9 +7,9 @@ import logo from "@/assets/aleesh-logo.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "الیش — سبزیجات ارگانیک و بسته‌بندی سبز" },
-      { name: "description", content: "الیش سبزیجات تازه‌ی ارگانیک پرورش می‌دهد و در بسته‌بندی بدون پلاستیک عرضه می‌کند؛ از مزرعه تا سفره‌ی شما." },
-      { property: "og:title", content: "الیش — سبزیجات ارگانیک و بسته‌بندی سبز" },
+      { title: "عالیش — سبزیجات ارگانیک و بسته‌بندی سبز" },
+      { name: "description", content: "عالیش سبزیجات تازه‌ی ارگانیک پرورش می‌دهد و در بسته‌بندی بدون پلاستیک عرضه می‌کند؛ از مزرعه تا سفره‌ی شما." },
+      { property: "og:title", content: "عالیش — سبزیجات ارگانیک و بسته‌بندی سبز" },
       { property: "og:description", content: "سبزیجات تازه‌ی ارگانیک، بسته‌بندی صادقانه و بدون پلاستیک." },
     ],
   }),
@@ -32,7 +32,7 @@ function Index() {
             از خاک زنده <span className="text-accent-foreground/80">تا سفره‌ی شما.</span>
           </h1>
           <p className="mt-6 max-w-md text-lg text-muted-foreground">
-            الیش سبزیجات ارگانیک پرورش می‌دهد و آن‌ها را در بسته‌بندی صادقانه و بدون پلاستیک عرضه می‌کند — تازه برای شما، مهربان با زمین.
+            عالیش سبزیجات ارگانیک پرورش می‌دهد و آن‌ها را در بسته‌بندی صادقانه و بدون پلاستیک عرضه می‌کند — تازه برای شما، مهربان با زمین.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/products" className="rounded-full bg-primary px-7 py-3 text-primary-foreground transition hover:opacity-90">
@@ -46,7 +46,7 @@ function Index() {
         <div className="relative">
           <img src={hero} alt="هویج، کلم، گوجه و چغندر ارگانیک در کاغذ کرافت و جعبه‌ی چوبی" width={1600} height={1008} className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl" />
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-card p-4 shadow-xl md:block">
-            <img src={logo} alt="لوگوی الیش" width={760} height={672} className="h-20 w-auto" />
+            <img src={logo} alt="لوگوی عالیش" width={760} height={672} className="h-20 w-auto" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ function Index() {
           <p className="text-sm text-muted-foreground">بسته‌بندی</p>
           <h2 className="mt-4 text-5xl text-primary">همان‌قدر با دقت بسته‌بندی می‌کنیم که پرورش داده‌ایم.</h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            هر جعبه‌ی الیش کرافت بازیافتی است و هر کیسه کمپوست‌شدنی. برای فروشگاه‌ها و رستوران‌ها بسته‌بندی سبز سفارشی هم ارائه می‌دهیم.
+            هر جعبه‌ی عالیش کرافت بازیافتی است و هر کیسه کمپوست‌شدنی. برای فروشگاه‌ها و رستوران‌ها بسته‌بندی سبز سفارشی هم ارائه می‌دهیم.
           </p>
           <Link to="/contact" className="mt-8 inline-block rounded-full bg-accent px-7 py-3 text-accent-foreground transition hover:opacity-90">
             استعلام عمده‌فروشی
@@ -79,3 +79,4 @@ function Index() {
     </SiteLayout>
   );
 }
+

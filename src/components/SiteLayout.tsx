@@ -1,10 +1,11 @@
-import { Link } from "@tanstack/react-router";
+﻿import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import mark from "@/assets/aleesh-mark.png";
 
 const nav = [
   { to: "/", label: "خانه" },
   { to: "/products", label: "محصولات" },
+  { to: "/shop", label: "فروشگاه" },
   { to: "/about", label: "داستان ما" },
   { to: "/contact", label: "تماس" },
 ] as const;
@@ -55,7 +56,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
           <div className="text-sm opacity-80">
             <p className="font-semibold opacity-100">صفحات</p>
-            <p className="mt-2">محصولات · داستان ما · تماس</p>
+            <p className="mt-2">محصولات · فروشگاه · داستان ما · تماس</p>
           </div>
           <div className="text-sm opacity-80">
             <p className="font-semibold opacity-100">تعهد ما</p>
@@ -63,7 +64,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
         <p className="border-t border-primary-foreground/15 py-5 text-center text-xs opacity-60">
-          © {new Date().getFullYear()} الیش. تمامی حقوق محفوظ است.
+          © {new Date().getFullYear()} عالیش. تمامی حقوق محفوظ است.
         </p>
       </footer>
     </div>

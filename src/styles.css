@@ -45,7 +45,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -109,7 +108,9 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
   }
+
+  /* Cormorant has no Persian glyphs; fall back to Vazirmatn so Persian headings stay styled. */
   h1, h2, h3 {
-    font-family: var(--font-display);
+    font-family: var(--font-display), var(--font-sans), sans-serif;
   }
 }

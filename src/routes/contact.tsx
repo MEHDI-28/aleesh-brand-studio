@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { LoaderCircle, Send, CheckCircle2 } from "lucide-react";
@@ -10,9 +10,9 @@ import { SiteLayout, PageHeading } from "@/components/SiteLayout";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "تماس و سفارش — الیش" },
-      { name: "description", content: "جعبه‌های سبزیجات ارگانیک سفارش دهید یا درباره‌ی بسته‌بندی سبز و عمده‌فروشی با الیش در تماس باشید." },
-      { property: "og:title", content: "تماس و سفارش — الیش" },
+      { title: "تماس و سفارش — عالیش" },
+      { name: "description", content: "جعبه‌های سبزیجات ارگانیک سفارش دهید یا درباره‌ی بسته‌بندی سبز و عمده‌فروشی با عالیش در تماس باشید." },
+      { property: "og:title", content: "تماس و سفارش — عالیش" },
       { property: "og:description", content: "سفارش سبزیجات ارگانیک یا استعلام بسته‌بندی عمده‌فروشی." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -74,3 +74,4 @@ function Contact() {
     </SiteLayout>
   );
 }
+
