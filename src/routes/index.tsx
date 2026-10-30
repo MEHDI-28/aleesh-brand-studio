@@ -55,7 +55,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-3">
           {values.map((v, i) => (
             <div key={v.t}>
-              <p className="font-display text-5xl text-accent">۰{i + 1}</p>
+              <p className="font-sans text-4xl text-accent">{["۱", "۲", "۳"][i]}</p>
               <h3 className="mt-2 text-3xl text-primary">{v.t}</h3>
               <p className="mt-3 text-muted-foreground">{v.d}</p>
             </div>
