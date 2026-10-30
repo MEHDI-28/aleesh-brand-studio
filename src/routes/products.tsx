@@ -6,6 +6,8 @@ import rootVegetables from "@/assets/products/root-vegetables.jpg";
 import tomatoesPeppers from "@/assets/products/tomatoes-peppers.jpg";
 import familyBox from "@/assets/products/family-box.jpg";
 import ecoPackaging from "@/assets/products/eco-packaging.jpg";
+import nuts from "@/assets/products/nuts.jpg";
+import driedFruits from "@/assets/products/dried-fruits.jpg";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -26,6 +28,8 @@ const products = [
   { name: "گوجه و فلفل", d: "رسیده زیر آفتاب، بدون گازدهی، پر از طعم.", img: tomatoesPeppers, alt: "گوجه‌های رسیده و فلفل در ظرف کاغذی" },
   { name: "جعبه خانواده", d: "جعبه‌ی هفتگی بزرگ و سخاوتمندانه، مناسب چهار نفر.", img: familyBox, alt: "صندوق چوبی پر از سبزیجات تازه" },
   { name: "بسته‌بندی سبز", d: "جعبه‌های کرافت و کیسه‌های کمپوست‌شدنی برای فروشگاه‌ها و رستوران‌ها.", img: ecoPackaging, alt: "جعبه‌های کرافت و کیسه‌های کمپوست‌شدنی" },
+  { name: "آجیل و مغزها", d: "پسته، بادام، گردو و بادام‌هندی؛ تازه و در بسته‌بندی کاغذی.", img: nuts, alt: "پسته، بادام، گردو و بادام‌هندی در ظرف‌های کاغذی" },
+  { name: "میوه‌ی خشک", d: "زردآلو، انجیر، خرما و کشمش؛ شیرین و طبیعی، بدون افزودنی.", img: driedFruits, alt: "زردآلو، انجیر، خرما و کشمش خشک در جعبه‌ی کاغذی" },
 ];
 
 function Products() {
